@@ -21,7 +21,7 @@ impl EventHandler for Bot {
     }
 
     async fn ready(&self, ctx: Context, ready: Ready) {
-        let mut interval = time::interval(std::time::Duration::from_secs(60));
+        let mut interval = time::interval(std::time::Duration::from_secs(600));
 
         let client = reqwest::Client::new();
 

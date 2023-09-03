@@ -4,6 +4,10 @@
 
 run `cargo install cargo-shuttle` to install [shuttle](https://docs.shuttle.rs/).
 
+## user config
+
+modify line 33 in `src/main.rs` to follow smth else than "bitcoin".
+
 ## environment variables
 
 rename `Secrets.example.toml` to `Secrets.toml` and fill your `DISCORD_TOKEN`
@@ -14,6 +18,4 @@ rename `Secrets.example.toml` to `Secrets.toml` and fill your `DISCORD_TOKEN`
 
 ## free hosting
 
-create an environment for this project : `cargo shuttle start`
-
-`cargo shuttle deploy`
+run `cargo shuttle deploy` : you'll be prompted to login using discord to create an account on shuttle.
